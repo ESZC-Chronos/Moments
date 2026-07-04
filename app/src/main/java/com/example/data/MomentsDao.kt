@@ -17,6 +17,9 @@ interface MomentsDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertMoment(moment: Moment)
     
+    @Query("UPDATE moments SET isFavorite = :isFavorite WHERE id = :id")
+    suspend fun updateFavorite(id: Int, isFavorite: Boolean)
+    
     @Query("SELECT COUNT(*) FROM moments WHERE questId = :questId")
     suspend fun countMomentsForQuest(questId: String): Int
 

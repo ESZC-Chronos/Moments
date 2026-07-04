@@ -14,6 +14,8 @@ import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.ZoomIn
 import androidx.compose.material.icons.filled.ZoomOut
 import androidx.compose.material3.*
@@ -132,7 +134,11 @@ fun ArchiveScreen(
                         pageSpacing = 16.dp
                     ) { page ->
                         PolaroidCard(
+
+
+
                             moment = filteredMoments[page],
+                            onFavoriteClick = { viewModel.toggleFavorite(it) },
                             modifier = Modifier.clickable { onMomentClick(filteredMoments[page].id) }
                         )
                     }
@@ -145,7 +151,11 @@ fun ArchiveScreen(
                     ) {
                         items(filteredMoments) { moment ->
                             PolaroidThumbnail(
+    
+    
+
                                 moment = moment,
+                                onFavoriteClick = { viewModel.toggleFavorite(it) },
                                 modifier = Modifier.clickable { 
                                     coroutineScope.launch {
                                         val index = filteredMoments.indexOf(moment)
@@ -174,7 +184,9 @@ fun ArchiveScreen(
 
 @Composable
 fun PolaroidCard(
+
     moment: Moment,
+    onFavoriteClick: (Moment) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     Card(
@@ -184,16 +196,28 @@ fun PolaroidCard(
         modifier = modifier.fillMaxWidth()
     ) {
         Column(modifier = Modifier.padding(16.dp).padding(bottom = 8.dp)) {
-            AsyncImage(
-                model = Uri.parse(moment.photoUri),
-                colorFilter = com.example.ui.components.ImageFilters.getFilter(moment.filterName),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .aspectRatio(1f)
-                    .background(Color.LightGray)
-            )
+            Box {
+                AsyncImage(
+                    model = Uri.parse(moment.photoUri),
+                    colorFilter = com.example.ui.components.ImageFilters.getFilter(moment.filterName),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .aspectRatio(1f)
+                        .background(Color.LightGray)
+                )
+                IconButton(
+                    onClick = { onFavoriteClick(moment) },
+                    modifier = Modifier.align(Alignment.TopEnd).padding(8.dp)
+                ) {
+                    Icon(
+                        imageVector = if (moment.isFavorite) androidx.compose.material.icons.Icons.Default.Favorite else androidx.compose.material.icons.Icons.Default.FavoriteBorder,
+                        contentDescription = "Favorite",
+                        tint = if (moment.isFavorite) Color.Red else Color.White
+                    )
+                }
+            }
             Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = moment.questTitle,
@@ -210,7 +234,9 @@ fun PolaroidCard(
 
 @Composable
 fun PolaroidThumbnail(
+    
     moment: Moment,
+    onFavoriteClick: (Moment) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     Card(
@@ -220,16 +246,29 @@ fun PolaroidThumbnail(
         modifier = modifier.fillMaxWidth()
     ) {
         Column(modifier = Modifier.padding(8.dp).padding(bottom = 4.dp)) {
-            AsyncImage(
-                model = Uri.parse(moment.photoUri),
-                colorFilter = com.example.ui.components.ImageFilters.getFilter(moment.filterName),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .aspectRatio(1f)
-                    .background(Color.LightGray)
-            )
+            Box {
+                AsyncImage(
+                    model = Uri.parse(moment.photoUri),
+                    colorFilter = com.example.ui.components.ImageFilters.getFilter(moment.filterName),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .aspectRatio(1f)
+                        .background(Color.LightGray)
+                )
+                IconButton(
+                    onClick = { onFavoriteClick(moment) },
+                    modifier = Modifier.align(Alignment.TopEnd).padding(4.dp).size(24.dp)
+                ) {
+                    Icon(
+                        imageVector = if (moment.isFavorite) androidx.compose.material.icons.Icons.Default.Favorite else androidx.compose.material.icons.Icons.Default.FavoriteBorder,
+                        contentDescription = "Favorite",
+                        tint = if (moment.isFavorite) Color.Red else Color.White,
+                        modifier = Modifier.size(16.dp)
+                    )
+                }
+            }
             Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = moment.questTitle,

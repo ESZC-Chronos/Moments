@@ -33,7 +33,7 @@ internal fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManage
     // Create intent to launch MainActivity
     val intent = android.content.Intent(context, com.example.MainActivity::class.java)
     val pendingIntent = android.app.PendingIntent.getActivity(context, 0, intent, android.app.PendingIntent.FLAG_UPDATE_CURRENT or android.app.PendingIntent.FLAG_IMMUTABLE)
-    views.setOnClickPendingIntent(R.id.widget_quest_text, pendingIntent)
+    views.setOnClickPendingIntent(R.id.widget_root, pendingIntent)
 
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }

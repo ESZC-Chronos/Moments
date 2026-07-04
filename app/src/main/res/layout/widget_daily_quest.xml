@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF7F2"
+    android:background="@drawable/widget_background"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:gravity="center_vertical">
 
     <TextView
         android:id="@+id/widget_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Daily Quest"
-        android:textColor="#C06B4C"
-        android:textSize="14sp"
+        android:textColor="#B0B0B0"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/widget_quest_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Loading today's quest..."
-        android:textColor="#3E3A39"
-        android:textSize="16sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:tint="#B0B0B0"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Tap to capture"
+            android:textColor="#B0B0B0"
+            android:textSize="12sp" />
+    </LinearLayout>
 
 </LinearLayout>

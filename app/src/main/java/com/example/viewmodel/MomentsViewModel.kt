@@ -166,11 +166,12 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
     fun fetchAvailablePacks() {
         viewModelScope.launch {
             val packs = repository.getAvailablePacks(if (_useServer.value) _serverUrl.value else null)
-            if (packs.isNotEmpty()) {
-                _availablePacks.value = packs
-            } else {
-                _availablePacks.value = listOf("daily", "mindfulness", "walking", "couple", "urban_explore")
-            }
+            val finalPacks = if (packs.isNotEmpty()) packs else listOf("daily", "mindfulness", "walking", "couple", "urban_explore", "mega_pack")
+            _availablePacks.value = finalPacks
+            
+            val currentInstalled = getSavedPacks()
+            val validInstalled = currentInstalled.filter { finalPacks.contains(it) }
+            _installedPacks.value = if (validInstalled.isNotEmpty()) validInstalled else listOf("daily")
         }
     }
 
@@ -216,6 +217,12 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
     fun clearAllMemories() {
         viewModelScope.launch {
             repository.deleteAllMoments()
+        }
+    }
+    
+    fun toggleFavorite(moment: Moment) {
+        viewModelScope.launch {
+            repository.updateFavorite(moment.id, !moment.isFavorite)
         }
     }
 

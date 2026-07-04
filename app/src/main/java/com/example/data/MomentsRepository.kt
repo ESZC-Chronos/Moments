@@ -15,6 +15,8 @@ class MomentsRepository(private val context: Context, private val momentsDao: Mo
 
     suspend fun insertMoment(moment: Moment) = momentsDao.insertMoment(moment)
     
+    suspend fun updateFavorite(id: Int, isFavorite: Boolean) = momentsDao.updateFavorite(id, isFavorite)
+    
     suspend fun deleteAllMoments() = momentsDao.deleteAllMoments()
     
     suspend fun isQuestCompleted(questId: String): Boolean {

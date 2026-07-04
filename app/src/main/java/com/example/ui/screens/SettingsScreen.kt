@@ -128,7 +128,7 @@ fun SettingsScreen(viewModel: MomentsViewModel) {
             Spacer(modifier = Modifier.weight(1f))
             
             Text(
-                "v1.0.0",
+                "v1.1.0",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.3f),
                 modifier = Modifier.align(Alignment.CenterHorizontally)

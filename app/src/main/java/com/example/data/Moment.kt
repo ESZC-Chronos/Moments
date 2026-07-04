@@ -12,5 +12,6 @@ data class Moment(
     val packName: String,
     val photoUri: String,
     val filterName: String = "none",
+    val isFavorite: Boolean = false,
     val timestamp: Long = System.currentTimeMillis()
 )

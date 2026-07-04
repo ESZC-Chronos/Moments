@@ -2,9 +2,12 @@ package com.example.ui.screens
 
 import android.graphics.Bitmap
 import android.graphics.Color
+import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -15,12 +18,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.LocalFireDepartment
 import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Star
+import coil.compose.AsyncImage
 import com.example.viewmodel.MomentsViewModel
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.qrcode.QRCodeWriter
@@ -35,8 +41,12 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
     val username by viewModel.username.collectAsState()
     val installedPacks by viewModel.installedPacks.collectAsState()
     val streak by viewModel.currentStreak.collectAsState()
+    val allMoments by viewModel.allMoments.collectAsState()
     var showCreatePackDialog by remember { mutableStateOf(false) }
-    var showGoogleDialog by remember { mutableStateOf(false) }
+    
+    val favoriteMoments = remember(allMoments) {
+        allMoments.filter { it.isFavorite }
+    }
     
     // Create Profile JSON
     val profileJson = remember(username, installedPacks) {
@@ -56,17 +66,6 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
             onCreate = { name, quests ->
                 viewModel.createCustomPack(name, quests)
                 showCreatePackDialog = false
-            }
-        )
-    }
-
-    if (showGoogleDialog) {
-        AlertDialog(
-            onDismissRequest = { showGoogleDialog = false },
-            title = { Text("Google Sign-In") },
-            text = { Text("Signed in with Google successfully! This feature is experimental and currently just connects your account locally.") },
-            confirmButton = {
-                TextButton(onClick = { showGoogleDialog = false }) { Text("OK") }
             }
         )
     }
@@ -145,7 +144,8 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
             ) {
                 Card(
                     modifier = Modifier.weight(1f),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant), shape = RoundedCornerShape(24.dp)
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+                    shape = RoundedCornerShape(24.dp)
                 ) {
                     Column(
                         modifier = Modifier.padding(16.dp),
@@ -160,7 +160,8 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
                 
                 Card(
                     modifier = Modifier.weight(1f),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant), shape = RoundedCornerShape(24.dp)
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+                    shape = RoundedCornerShape(24.dp)
                 ) {
                     Column(
                         modifier = Modifier.padding(16.dp),
@@ -173,25 +174,55 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
                 }
             }
             
-            Button(
-                onClick = { showGoogleDialog = true },
-                modifier = Modifier.fillMaxWidth().height(64.dp), shape = RoundedCornerShape(24.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.secondaryContainer,
-                    contentColor = MaterialTheme.colorScheme.onSecondaryContainer
-                )
-            ) {
-                Text("Sign in with Google")
+            // Emblems Section
+            Column(modifier = Modifier.fillMaxWidth()) {
+                Text("Achievements", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                Spacer(modifier = Modifier.height(16.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Emblem(title = "7 Days", color = androidx.compose.ui.graphics.Color(0xFFCD7F32), achieved = streak >= 7) // Bronze
+                    Emblem(title = "30 Days", color = androidx.compose.ui.graphics.Color(0xFFC0C0C0), achieved = streak >= 30) // Silver
+                    Emblem(title = "100 Days", color = androidx.compose.ui.graphics.Color(0xFFFFD700), achieved = streak >= 100) // Gold
+                }
             }
-
+            
+            // Favorites Section
+            if (favoriteMoments.isNotEmpty()) {
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    Text("Favorites", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    LazyRow(
+                        horizontalArrangement = Arrangement.spacedBy(16.dp)
+                    ) {
+                        items(favoriteMoments) { moment ->
+                            Card(
+                                shape = RoundedCornerShape(16.dp),
+                                modifier = Modifier.size(120.dp)
+                            ) {
+                                AsyncImage(
+                                    model = Uri.parse(moment.photoUri),
+                                    colorFilter = com.example.ui.components.ImageFilters.getFilter(moment.filterName),
+                                    contentDescription = null,
+                                    contentScale = ContentScale.Crop,
+                                    modifier = Modifier.fillMaxSize()
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+            
             Button(
                 onClick = { showCreatePackDialog = true },
-                modifier = Modifier.fillMaxWidth().height(64.dp), shape = RoundedCornerShape(24.dp)
+                modifier = Modifier.fillMaxWidth().height(64.dp),
+                shape = RoundedCornerShape(24.dp)
             ) {
                 Text("Create Custom Pack")
             }
             
-            Divider(modifier = Modifier.padding(vertical = 8.dp))
+            HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
             
             Text("Share Profile", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
             Text("Let others scan this QR to try your packs.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -211,7 +242,8 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
             
             Button(
                 onClick = onScanClick,
-                modifier = Modifier.fillMaxWidth().height(64.dp), shape = RoundedCornerShape(24.dp),
+                modifier = Modifier.fillMaxWidth().height(64.dp),
+                shape = RoundedCornerShape(24.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.onBackground,
                     contentColor = MaterialTheme.colorScheme.background
@@ -225,6 +257,28 @@ fun ProfileScreen(viewModel: MomentsViewModel, onScanClick: () -> Unit, onSettin
     }
 }
 
+@Composable
+fun Emblem(title: String, color: androidx.compose.ui.graphics.Color, achieved: Boolean) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Box(
+            modifier = Modifier
+                .size(64.dp)
+                .clip(CircleShape)
+                .background(if (achieved) color.copy(alpha = 0.2f) else MaterialTheme.colorScheme.surfaceVariant),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                Icons.Default.Star,
+                contentDescription = title,
+                tint = if (achieved) color else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
+                modifier = Modifier.size(32.dp)
+            )
+        }
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(title, style = MaterialTheme.typography.labelMedium, color = if (achieved) MaterialTheme.colorScheme.onBackground else MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
 fun generateQrCode(text: String): Bitmap? {
     try {
         val writer = QRCodeWriter()
@@ -234,7 +288,7 @@ fun generateQrCode(text: String): Bitmap? {
         val bmp = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565)
         for (x in 0 until width) {
             for (y in 0 until height) {
-                bmp.setPixel(x, y, if (bitMatrix.get(x, y)) Color.BLACK else Color.WHITE)
+                bmp.setPixel(x, y, if (bitMatrix.get(x, y)) android.graphics.Color.BLACK else android.graphics.Color.WHITE)
             }
         }
         return bmp
@@ -263,7 +317,7 @@ fun CreatePackDialog(onDismiss: () -> Unit, onCreate: (String, List<Quest>) -> U
                     singleLine = true
                 )
                 
-                Divider(modifier = Modifier.padding(vertical = 8.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
                 
                 Text("Add Quest", style = MaterialTheme.typography.titleSmall)
                 OutlinedTextField(
