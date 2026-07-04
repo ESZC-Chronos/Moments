@@ -21,9 +21,12 @@ class MomentsRepository(private val context: Context, private val momentsDao: Mo
         return momentsDao.countMomentsForQuest(questId) > 0
     }
 
-    suspend fun getQuestPack(packName: String, baseUrl: String): QuestPack {
+    suspend fun getQuestPack(packName: String, baseUrl: String?): QuestPack {
         if (packName.startsWith("custom_")) {
             return getCustomPack(packName) ?: generateFallbackPack(packName)
+        }
+        if (baseUrl == null) {
+            return getQuestPackFromAssets(packName) ?: generateFallbackPack(packName)
         }
         return try {
             val url = if (baseUrl.endsWith("/")) "${baseUrl}${packName}.json" else "${baseUrl}/${packName}.json"
@@ -33,12 +36,16 @@ class MomentsRepository(private val context: Context, private val momentsDao: Mo
         }
     }
 
-    suspend fun getAvailablePacks(baseUrl: String): List<String> {
-        val serverPacks = try {
-            val url = if (baseUrl.endsWith("/")) "${baseUrl}packs.json" else "${baseUrl}/packs.json"
-            NetworkModule.api.getAvailablePacks(url).packs
-        } catch (e: Exception) {
+    suspend fun getAvailablePacks(baseUrl: String?): List<String> {
+        val serverPacks = if (baseUrl == null) {
             getAvailablePacksFromAssets()
+        } else {
+            try {
+                val url = if (baseUrl.endsWith("/")) "${baseUrl}packs.json" else "${baseUrl}/packs.json"
+                NetworkModule.api.getAvailablePacks(url).packs
+            } catch (e: Exception) {
+                getAvailablePacksFromAssets()
+            }
         }
         
         val customPacks = context.filesDir.listFiles { file -> 
@@ -94,9 +101,9 @@ class MomentsRepository(private val context: Context, private val momentsDao: Mo
             val json = reader.readText()
             reader.close()
             val packsResponse = moshi.adapter(com.example.network.PacksResponse::class.java).fromJson(json)
-            packsResponse?.packs ?: listOf("daily", "mindfulness", "walking", "couple", "urban_explore")
+            packsResponse?.packs ?: listOf("daily", "mindfulness", "walking", "couple", "urban_explore", "mega_pack")
         } catch (e: Exception) {
-            listOf("daily", "mindfulness", "walking", "couple", "urban_explore")
+            listOf("daily", "mindfulness", "walking", "couple", "urban_explore", "mega_pack")
         }
     }
     

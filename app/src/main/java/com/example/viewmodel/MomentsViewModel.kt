@@ -39,6 +39,15 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
+    private val _useServer = MutableStateFlow(prefs.getBoolean("use_server", false))
+    val useServer: StateFlow<Boolean> = _useServer.asStateFlow()
+
+    fun toggleUseServer(use: Boolean) {
+        prefs.edit().putBoolean("use_server", use).apply()
+        _useServer.value = use
+        fetchAvailablePacks()
+    }
+
     private val _serverUrl = MutableStateFlow(prefs.getString("server_url", "https://moments.evah-tec.de/") ?: "https://moments.evah-tec.de/")
     val serverUrl: StateFlow<String> = _serverUrl.asStateFlow()
     
@@ -90,7 +99,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
             
             if (savedDate == todayDate && !savedPack.isNullOrEmpty() && !savedQuestId.isNullOrEmpty()) {
                 if (!completedIds.contains(savedQuestId)) {
-                    val pack = repository.getQuestPack(savedPack, _serverUrl.value)
+                    val pack = repository.getQuestPack(savedPack, if (_useServer.value) _serverUrl.value else null)
                     val quest = pack?.quests?.find { it.id == savedQuestId }
                     if (quest != null) {
                         _dailyQuest.value = Pair(quest, savedPack)
@@ -104,7 +113,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
             // Roll new daily quest
             var allQuests = mutableListOf<Pair<Quest, String>>()
             for (packName in _installedPacks.value) {
-                val pack = repository.getQuestPack(packName, _serverUrl.value)
+                val pack = repository.getQuestPack(packName, if (_useServer.value) _serverUrl.value else null)
                 if (pack != null) {
                     for (quest in pack.quests) {
                         if (!completedIds.contains(quest.id)) {
@@ -156,7 +165,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
 
     fun fetchAvailablePacks() {
         viewModelScope.launch {
-            val packs = repository.getAvailablePacks(_serverUrl.value)
+            val packs = repository.getAvailablePacks(if (_useServer.value) _serverUrl.value else null)
             if (packs.isNotEmpty()) {
                 _availablePacks.value = packs
             } else {
@@ -230,7 +239,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
                 val allQuests = mutableListOf<Pair<Quest, String>>()
                 val completedIds = allMoments.value.map { it.questId }.toSet()
                 for (packName in _installedPacks.value) {
-                    val pack = repository.getQuestPack(packName, _serverUrl.value)
+                    val pack = repository.getQuestPack(packName, if (_useServer.value) _serverUrl.value else null)
                     if (pack != null) {
                         for (quest in pack.quests) {
                             if (!completedIds.contains(quest.id)) {
@@ -251,7 +260,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
     }
 
     suspend fun getQuest(packName: String, questId: String): Quest? {
-        val pack = repository.getQuestPack(packName, _serverUrl.value)
+        val pack = repository.getQuestPack(packName, if (_useServer.value) _serverUrl.value else null)
         return pack?.quests?.find { it.id == questId }
     }
 
@@ -259,7 +268,7 @@ class MomentsViewModel(application: Application) : AndroidViewModel(application)
         viewModelScope.launch {
             _isLoading.value = true
             try {
-                val pack = repository.getQuestPack(packName, _serverUrl.value)
+                val pack = repository.getQuestPack(packName, if (_useServer.value) _serverUrl.value else null)
                 _currentPack.value = pack
             } finally {
                 _isLoading.value = false
