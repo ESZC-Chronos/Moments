@@ -1,0 +1,606 @@
+{
+  "packName": "Tägliches Pack",
+  "version": 2,
+  "quests": [
+    {
+      "id": "d1",
+      "title": "Dokumentiere etwas Unbeachtetes #1",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2",
+      "title": "Morgenlicht #2",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d3",
+      "title": "Abendstimmung #3",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4",
+      "title": "Eine Tasse Kaffee #4",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5",
+      "title": "Ein Lächeln #5",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d6",
+      "title": "Etwas Symmetrisches #6",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d7",
+      "title": "Ein interessanter Schatten #7",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d8",
+      "title": "Spiegelung #8",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d9",
+      "title": "Ein Farbtupfer #9",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d10",
+      "title": "Regentropfen #10",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d11",
+      "title": "Ein altes Buch #11",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d12",
+      "title": "Ein gemütlicher Ort #12",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d13",
+      "title": "Eine Pflanze #13",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d14",
+      "title": "Etwas Warmes #14",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d15",
+      "title": "Finde etwas Friedliches #15",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d16",
+      "title": "Dokumentiere etwas Unbeachtetes #16",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d17",
+      "title": "Morgenlicht #17",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d18",
+      "title": "Abendstimmung #18",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d19",
+      "title": "Eine Tasse Kaffee #19",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d20",
+      "title": "Ein Lächeln #20",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d21",
+      "title": "Etwas Symmetrisches #21",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d22",
+      "title": "Ein interessanter Schatten #22",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d23",
+      "title": "Spiegelung #23",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d24",
+      "title": "Ein Farbtupfer #24",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d25",
+      "title": "Regentropfen #25",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d26",
+      "title": "Ein altes Buch #26",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d27",
+      "title": "Ein gemütlicher Ort #27",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d28",
+      "title": "Eine Pflanze #28",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d29",
+      "title": "Etwas Warmes #29",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d30",
+      "title": "Finde etwas Friedliches #30",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d31",
+      "title": "Dokumentiere etwas Unbeachtetes #31",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d32",
+      "title": "Morgenlicht #32",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d33",
+      "title": "Abendstimmung #33",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d34",
+      "title": "Eine Tasse Kaffee #34",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d35",
+      "title": "Ein Lächeln #35",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d36",
+      "title": "Etwas Symmetrisches #36",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d37",
+      "title": "Ein interessanter Schatten #37",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d38",
+      "title": "Spiegelung #38",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d39",
+      "title": "Ein Farbtupfer #39",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d40",
+      "title": "Regentropfen #40",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d41",
+      "title": "Ein altes Buch #41",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d42",
+      "title": "Ein gemütlicher Ort #42",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d43",
+      "title": "Eine Pflanze #43",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d44",
+      "title": "Etwas Warmes #44",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d45",
+      "title": "Finde etwas Friedliches #45",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d46",
+      "title": "Dokumentiere etwas Unbeachtetes #46",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d47",
+      "title": "Morgenlicht #47",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d48",
+      "title": "Abendstimmung #48",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d49",
+      "title": "Eine Tasse Kaffee #49",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d50",
+      "title": "Ein Lächeln #50",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d51",
+      "title": "Etwas Symmetrisches #51",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d52",
+      "title": "Ein interessanter Schatten #52",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d53",
+      "title": "Spiegelung #53",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d54",
+      "title": "Ein Farbtupfer #54",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d55",
+      "title": "Regentropfen #55",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d56",
+      "title": "Ein altes Buch #56",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d57",
+      "title": "Ein gemütlicher Ort #57",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d58",
+      "title": "Eine Pflanze #58",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d59",
+      "title": "Etwas Warmes #59",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d60",
+      "title": "Finde etwas Friedliches #60",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d61",
+      "title": "Dokumentiere etwas Unbeachtetes #61",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d62",
+      "title": "Morgenlicht #62",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d63",
+      "title": "Abendstimmung #63",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d64",
+      "title": "Eine Tasse Kaffee #64",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d65",
+      "title": "Ein Lächeln #65",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d66",
+      "title": "Etwas Symmetrisches #66",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d67",
+      "title": "Ein interessanter Schatten #67",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d68",
+      "title": "Spiegelung #68",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d69",
+      "title": "Ein Farbtupfer #69",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d70",
+      "title": "Regentropfen #70",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d71",
+      "title": "Ein altes Buch #71",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d72",
+      "title": "Ein gemütlicher Ort #72",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d73",
+      "title": "Eine Pflanze #73",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d74",
+      "title": "Etwas Warmes #74",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d75",
+      "title": "Finde etwas Friedliches #75",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d76",
+      "title": "Dokumentiere etwas Unbeachtetes #76",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d77",
+      "title": "Morgenlicht #77",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d78",
+      "title": "Abendstimmung #78",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d79",
+      "title": "Eine Tasse Kaffee #79",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d80",
+      "title": "Ein Lächeln #80",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d81",
+      "title": "Etwas Symmetrisches #81",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d82",
+      "title": "Ein interessanter Schatten #82",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d83",
+      "title": "Spiegelung #83",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d84",
+      "title": "Ein Farbtupfer #84",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d85",
+      "title": "Regentropfen #85",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d86",
+      "title": "Ein altes Buch #86",
+      "description": "Finde und fotografiere ein altes buch in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d87",
+      "title": "Ein gemütlicher Ort #87",
+      "description": "Finde und fotografiere ein gemütlicher ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d88",
+      "title": "Eine Pflanze #88",
+      "description": "Finde und fotografiere eine pflanze in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d89",
+      "title": "Etwas Warmes #89",
+      "description": "Finde und fotografiere etwas warmes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d90",
+      "title": "Finde etwas Friedliches #90",
+      "description": "Finde und fotografiere finde etwas friedliches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d91",
+      "title": "Dokumentiere etwas Unbeachtetes #91",
+      "description": "Finde und fotografiere dokumentiere etwas unbeachtetes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d92",
+      "title": "Morgenlicht #92",
+      "description": "Finde und fotografiere morgenlicht in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d93",
+      "title": "Abendstimmung #93",
+      "description": "Finde und fotografiere abendstimmung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d94",
+      "title": "Eine Tasse Kaffee #94",
+      "description": "Finde und fotografiere eine tasse kaffee in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d95",
+      "title": "Ein Lächeln #95",
+      "description": "Finde und fotografiere ein lächeln in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d96",
+      "title": "Etwas Symmetrisches #96",
+      "description": "Finde und fotografiere etwas symmetrisches in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d97",
+      "title": "Ein interessanter Schatten #97",
+      "description": "Finde und fotografiere ein interessanter schatten in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d98",
+      "title": "Spiegelung #98",
+      "description": "Finde und fotografiere spiegelung in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d99",
+      "title": "Ein Farbtupfer #99",
+      "description": "Finde und fotografiere ein farbtupfer in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d100",
+      "title": "Regentropfen #100",
+      "description": "Finde und fotografiere regentropfen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    }
+  ]
+}

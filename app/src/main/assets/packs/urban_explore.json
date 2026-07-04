@@ -1,0 +1,606 @@
+{
+  "packName": "Urban Explore Pack",
+  "version": 2,
+  "quests": [
+    {
+      "id": "u1",
+      "title": "Neon oder Lichter #1",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u2",
+      "title": "Straßenleben #2",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u3",
+      "title": "Ein verlassener Ort #3",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u4",
+      "title": "Street Art #4",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u5",
+      "title": "Architektur #5",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u6",
+      "title": "Ein interessantes Fenster #6",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u7",
+      "title": "Treppen #7",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u8",
+      "title": "Ein Bahnhof #8",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u9",
+      "title": "Eine Gasse #9",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u10",
+      "title": "Ein altes Schild #10",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u11",
+      "title": "Ein Spiegelbild im Fenster #11",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u12",
+      "title": "Ein Markt #12",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u13",
+      "title": "Eine Brücke #13",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u14",
+      "title": "Ein Kran #14",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u15",
+      "title": "Geometrie #15",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u16",
+      "title": "Neon oder Lichter #16",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u17",
+      "title": "Straßenleben #17",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u18",
+      "title": "Ein verlassener Ort #18",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u19",
+      "title": "Street Art #19",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u20",
+      "title": "Architektur #20",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u21",
+      "title": "Ein interessantes Fenster #21",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u22",
+      "title": "Treppen #22",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u23",
+      "title": "Ein Bahnhof #23",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u24",
+      "title": "Eine Gasse #24",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u25",
+      "title": "Ein altes Schild #25",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u26",
+      "title": "Ein Spiegelbild im Fenster #26",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u27",
+      "title": "Ein Markt #27",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u28",
+      "title": "Eine Brücke #28",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u29",
+      "title": "Ein Kran #29",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u30",
+      "title": "Geometrie #30",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u31",
+      "title": "Neon oder Lichter #31",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u32",
+      "title": "Straßenleben #32",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u33",
+      "title": "Ein verlassener Ort #33",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u34",
+      "title": "Street Art #34",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u35",
+      "title": "Architektur #35",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u36",
+      "title": "Ein interessantes Fenster #36",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u37",
+      "title": "Treppen #37",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u38",
+      "title": "Ein Bahnhof #38",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u39",
+      "title": "Eine Gasse #39",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u40",
+      "title": "Ein altes Schild #40",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u41",
+      "title": "Ein Spiegelbild im Fenster #41",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u42",
+      "title": "Ein Markt #42",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u43",
+      "title": "Eine Brücke #43",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u44",
+      "title": "Ein Kran #44",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u45",
+      "title": "Geometrie #45",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u46",
+      "title": "Neon oder Lichter #46",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u47",
+      "title": "Straßenleben #47",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u48",
+      "title": "Ein verlassener Ort #48",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u49",
+      "title": "Street Art #49",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u50",
+      "title": "Architektur #50",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u51",
+      "title": "Ein interessantes Fenster #51",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u52",
+      "title": "Treppen #52",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u53",
+      "title": "Ein Bahnhof #53",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u54",
+      "title": "Eine Gasse #54",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u55",
+      "title": "Ein altes Schild #55",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u56",
+      "title": "Ein Spiegelbild im Fenster #56",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u57",
+      "title": "Ein Markt #57",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u58",
+      "title": "Eine Brücke #58",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u59",
+      "title": "Ein Kran #59",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u60",
+      "title": "Geometrie #60",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u61",
+      "title": "Neon oder Lichter #61",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u62",
+      "title": "Straßenleben #62",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u63",
+      "title": "Ein verlassener Ort #63",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u64",
+      "title": "Street Art #64",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u65",
+      "title": "Architektur #65",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u66",
+      "title": "Ein interessantes Fenster #66",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u67",
+      "title": "Treppen #67",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u68",
+      "title": "Ein Bahnhof #68",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u69",
+      "title": "Eine Gasse #69",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u70",
+      "title": "Ein altes Schild #70",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u71",
+      "title": "Ein Spiegelbild im Fenster #71",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u72",
+      "title": "Ein Markt #72",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u73",
+      "title": "Eine Brücke #73",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u74",
+      "title": "Ein Kran #74",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u75",
+      "title": "Geometrie #75",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u76",
+      "title": "Neon oder Lichter #76",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u77",
+      "title": "Straßenleben #77",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u78",
+      "title": "Ein verlassener Ort #78",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u79",
+      "title": "Street Art #79",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u80",
+      "title": "Architektur #80",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u81",
+      "title": "Ein interessantes Fenster #81",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u82",
+      "title": "Treppen #82",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u83",
+      "title": "Ein Bahnhof #83",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u84",
+      "title": "Eine Gasse #84",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u85",
+      "title": "Ein altes Schild #85",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u86",
+      "title": "Ein Spiegelbild im Fenster #86",
+      "description": "Finde und fotografiere ein spiegelbild im fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u87",
+      "title": "Ein Markt #87",
+      "description": "Finde und fotografiere ein markt in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u88",
+      "title": "Eine Brücke #88",
+      "description": "Finde und fotografiere eine brücke in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u89",
+      "title": "Ein Kran #89",
+      "description": "Finde und fotografiere ein kran in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u90",
+      "title": "Geometrie #90",
+      "description": "Finde und fotografiere geometrie in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u91",
+      "title": "Neon oder Lichter #91",
+      "description": "Finde und fotografiere neon oder lichter in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u92",
+      "title": "Straßenleben #92",
+      "description": "Finde und fotografiere straßenleben in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u93",
+      "title": "Ein verlassener Ort #93",
+      "description": "Finde und fotografiere ein verlassener ort in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u94",
+      "title": "Street Art #94",
+      "description": "Finde und fotografiere street art in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u95",
+      "title": "Architektur #95",
+      "description": "Finde und fotografiere architektur in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u96",
+      "title": "Ein interessantes Fenster #96",
+      "description": "Finde und fotografiere ein interessantes fenster in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u97",
+      "title": "Treppen #97",
+      "description": "Finde und fotografiere treppen in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u98",
+      "title": "Ein Bahnhof #98",
+      "description": "Finde und fotografiere ein bahnhof in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u99",
+      "title": "Eine Gasse #99",
+      "description": "Finde und fotografiere eine gasse in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "u100",
+      "title": "Ein altes Schild #100",
+      "description": "Finde und fotografiere ein altes schild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    }
+  ]
+}

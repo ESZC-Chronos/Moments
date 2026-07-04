@@ -1,0 +1,606 @@
+{
+  "packName": "Spaziergang Pack",
+  "version": 2,
+  "quests": [
+    {
+      "id": "w1",
+      "title": "Fange Bewegung ein #1",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w2",
+      "title": "Folge einem Pfad #2",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w3",
+      "title": "Ein interessantes Tor #3",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w4",
+      "title": "Ein Baumstamm #4",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w5",
+      "title": "Ein Vogel #5",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w6",
+      "title": "Spuren auf dem Weg #6",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w7",
+      "title": "Ein Straßenschild #7",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w8",
+      "title": "Etwas Verlorenes #8",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w9",
+      "title": "Ein alter Zaun #9",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w10",
+      "title": "Blick in die Ferne #10",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w11",
+      "title": "Eine Bank #11",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w12",
+      "title": "Ein Wegweiser #12",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w13",
+      "title": "Blumen am Wegesrand #13",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w14",
+      "title": "Ein Stein #14",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w15",
+      "title": "Spaziere ohne Ziel #15",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w16",
+      "title": "Fange Bewegung ein #16",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w17",
+      "title": "Folge einem Pfad #17",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w18",
+      "title": "Ein interessantes Tor #18",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w19",
+      "title": "Ein Baumstamm #19",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w20",
+      "title": "Ein Vogel #20",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w21",
+      "title": "Spuren auf dem Weg #21",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w22",
+      "title": "Ein Straßenschild #22",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w23",
+      "title": "Etwas Verlorenes #23",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w24",
+      "title": "Ein alter Zaun #24",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w25",
+      "title": "Blick in die Ferne #25",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w26",
+      "title": "Eine Bank #26",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w27",
+      "title": "Ein Wegweiser #27",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w28",
+      "title": "Blumen am Wegesrand #28",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w29",
+      "title": "Ein Stein #29",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w30",
+      "title": "Spaziere ohne Ziel #30",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w31",
+      "title": "Fange Bewegung ein #31",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w32",
+      "title": "Folge einem Pfad #32",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w33",
+      "title": "Ein interessantes Tor #33",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w34",
+      "title": "Ein Baumstamm #34",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w35",
+      "title": "Ein Vogel #35",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w36",
+      "title": "Spuren auf dem Weg #36",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w37",
+      "title": "Ein Straßenschild #37",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w38",
+      "title": "Etwas Verlorenes #38",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w39",
+      "title": "Ein alter Zaun #39",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w40",
+      "title": "Blick in die Ferne #40",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w41",
+      "title": "Eine Bank #41",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w42",
+      "title": "Ein Wegweiser #42",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w43",
+      "title": "Blumen am Wegesrand #43",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w44",
+      "title": "Ein Stein #44",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w45",
+      "title": "Spaziere ohne Ziel #45",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w46",
+      "title": "Fange Bewegung ein #46",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w47",
+      "title": "Folge einem Pfad #47",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w48",
+      "title": "Ein interessantes Tor #48",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w49",
+      "title": "Ein Baumstamm #49",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w50",
+      "title": "Ein Vogel #50",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w51",
+      "title": "Spuren auf dem Weg #51",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w52",
+      "title": "Ein Straßenschild #52",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w53",
+      "title": "Etwas Verlorenes #53",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w54",
+      "title": "Ein alter Zaun #54",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w55",
+      "title": "Blick in die Ferne #55",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w56",
+      "title": "Eine Bank #56",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w57",
+      "title": "Ein Wegweiser #57",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w58",
+      "title": "Blumen am Wegesrand #58",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w59",
+      "title": "Ein Stein #59",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w60",
+      "title": "Spaziere ohne Ziel #60",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w61",
+      "title": "Fange Bewegung ein #61",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w62",
+      "title": "Folge einem Pfad #62",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w63",
+      "title": "Ein interessantes Tor #63",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w64",
+      "title": "Ein Baumstamm #64",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w65",
+      "title": "Ein Vogel #65",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w66",
+      "title": "Spuren auf dem Weg #66",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w67",
+      "title": "Ein Straßenschild #67",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w68",
+      "title": "Etwas Verlorenes #68",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w69",
+      "title": "Ein alter Zaun #69",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w70",
+      "title": "Blick in die Ferne #70",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w71",
+      "title": "Eine Bank #71",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w72",
+      "title": "Ein Wegweiser #72",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w73",
+      "title": "Blumen am Wegesrand #73",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w74",
+      "title": "Ein Stein #74",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w75",
+      "title": "Spaziere ohne Ziel #75",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w76",
+      "title": "Fange Bewegung ein #76",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w77",
+      "title": "Folge einem Pfad #77",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w78",
+      "title": "Ein interessantes Tor #78",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w79",
+      "title": "Ein Baumstamm #79",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w80",
+      "title": "Ein Vogel #80",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w81",
+      "title": "Spuren auf dem Weg #81",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w82",
+      "title": "Ein Straßenschild #82",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w83",
+      "title": "Etwas Verlorenes #83",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w84",
+      "title": "Ein alter Zaun #84",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w85",
+      "title": "Blick in die Ferne #85",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w86",
+      "title": "Eine Bank #86",
+      "description": "Finde und fotografiere eine bank in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w87",
+      "title": "Ein Wegweiser #87",
+      "description": "Finde und fotografiere ein wegweiser in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w88",
+      "title": "Blumen am Wegesrand #88",
+      "description": "Finde und fotografiere blumen am wegesrand in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w89",
+      "title": "Ein Stein #89",
+      "description": "Finde und fotografiere ein stein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w90",
+      "title": "Spaziere ohne Ziel #90",
+      "description": "Finde und fotografiere spaziere ohne ziel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w91",
+      "title": "Fange Bewegung ein #91",
+      "description": "Finde und fotografiere fange bewegung ein in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w92",
+      "title": "Folge einem Pfad #92",
+      "description": "Finde und fotografiere folge einem pfad in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w93",
+      "title": "Ein interessantes Tor #93",
+      "description": "Finde und fotografiere ein interessantes tor in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w94",
+      "title": "Ein Baumstamm #94",
+      "description": "Finde und fotografiere ein baumstamm in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w95",
+      "title": "Ein Vogel #95",
+      "description": "Finde und fotografiere ein vogel in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w96",
+      "title": "Spuren auf dem Weg #96",
+      "description": "Finde und fotografiere spuren auf dem weg in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w97",
+      "title": "Ein Straßenschild #97",
+      "description": "Finde und fotografiere ein straßenschild in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "w98",
+      "title": "Etwas Verlorenes #98",
+      "description": "Finde und fotografiere etwas verlorenes in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "w99",
+      "title": "Ein alter Zaun #99",
+      "description": "Finde und fotografiere ein alter zaun in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "w100",
+      "title": "Blick in die Ferne #100",
+      "description": "Finde und fotografiere blick in die ferne in deiner Umgebung. Nimm dir Zeit dafür.",
+      "difficulty": "medium"
+    }
+  ]
+}
